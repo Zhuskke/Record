@@ -23,9 +23,9 @@ export async function getNotes(req, res) {
 export async function createtNotes (req, res) {
     try {
         const {title, content} = req.body;
-        const note = await new Note({title,content})
-        const newNote = note.save()
-        res.status(201).json({message:"Note successfully created"})
+        const note = new Note({title,content})
+        const newNote = await note.save()
+        res.status(201).json(newNote)
     } catch (error) {
         console.error("Error on createNotes controller", error);
         res.status(500).json({message:"Internal Server Error"})

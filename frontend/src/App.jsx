@@ -7,9 +7,8 @@ import {toast} from 'react-hot-toast'
 
 function App() {
   return (
-    <div data-theme="coffee"> 
-      {/* <button onClick={ () => toast.success('Clicked')} className="text-red-500 p-4 ">Click me</button>
-      <button onClick={() => toast.error("Error")} className='btn btn-primary'>Error</button> */}
+    <div className="relative h-full w-full">
+      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_60%,#e7a95d_100%)]" />
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/note/:id' element={<NoteDetailPage />}/>

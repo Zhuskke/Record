@@ -8,8 +8,8 @@ import {toast} from 'react-hot-toast'
 function App() {
   return (
     <div data-theme="coffee"> 
-      <button onClick={ () => toast.success('Clicked')} className="text-red-500 p-4 ">Click me</button>
-      <button onClick={() => toast.error("Error")} className='btn btn-primary'>Error</button>
+      {/* <button onClick={ () => toast.success('Clicked')} className="text-red-500 p-4 ">Click me</button>
+      <button onClick={() => toast.error("Error")} className='btn btn-primary'>Error</button> */}
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/note/:id' element={<NoteDetailPage />}/>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function createPage() {
+const createPage = () => {
   return (
     <div>
-      create
+      
     </div>
   )
 }

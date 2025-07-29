@@ -15,6 +15,7 @@ const noteCard = ({ note, setNotes }) => {
       setNotes((prev) => prev.filter(note => note._id !== id)) // get rid of the deleted notes
       toast.success("Note deleted successfully")
           } catch (error) {
+            console.log("handledelete error", error)
       if (error.response.status === 429) {
         toast.error("Slow down deleting notes", {
           icon: "💀"
